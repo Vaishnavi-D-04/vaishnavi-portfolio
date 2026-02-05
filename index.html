@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi Dharmapuri | Resume Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Vaishnavi Dharmapuri</div>
+
+        <div class="menu-icon" id="menuIcon">☰</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#" data-section="home">Home</a></li>
+            <li><a href="#" data-section="about">About</a></li>
+            <li><a href="#" data-section="skills">Skills</a></li>
+            <li><a href="#" data-section="projects">Projects</a></li>
+            <li><a href="#" data-section="contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="section active">
+        <div class="content">
+            <h1>Vaishnavi Dharmapuri</h1>
+            <h2>AI & Machine Learning Engineer</h2>
+
+            <p class="subtitle">
+                B.Tech CSE (AI & ML) <br>
+                Python • Machine Learning • AWS • Data Structures
+            </p>
+
+            <div class="buttons">
+                <a href="Vaishnavi_Dharmapuri_Resume.pdf" class="btn primary" download="Vaishnavi_Dharmapuri_Resume.pdf">Download Resume</a>
+                <a href="#" data-section="projects" class="btn secondary">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="about-wrapper">
+            <div class="content">
+                <h2>Professional Summary</h2>
+                <p>
+                    Computer Science graduate specializing in Artificial Intelligence and
+                    Machine Learning with strong foundations in programming, data
+                    structures, and problem-solving.
+                    <br><br>
+                    Experienced in developing real-world ML applications, autonomous
+                    systems, and cloud-based solutions using AWS. Passionate about
+                    building scalable, intelligent systems.
+                </p>
+            </div>
+
+            <aside class="about-extras">
+                <div class="extra-card">
+                    <h4>Quick Facts</h4>
+                    <ul>
+                        <li>B.Tech CSE (AI &amp; ML)</li>
+                        <li>Internships: ML / Cloud</li>
+                        <li>Tools: Python, AWS, Git</li>
+                    </ul>
+                    <div class="extra-cta">
+                        <a href="Vaishnavi_Dharmapuri_Resume.pdf" class="btn primary" download="Vaishnavi_Dharmapuri_Resume.pdf">Resume</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="content skills-content">
+            <h2>Technical Skills</h2>
+
+            <div class="skill-grid">
+                <div class="skill-chip" data-tooltip="Low-level & systems programming, performance-focused">Programming: <span class="skill-names">C, C++, Python, Java</span></div>
+                <div class="skill-chip" data-tooltip="Core fundamentals used to build efficient algorithms">Core CS: <span class="skill-names">Data Structures, Algorithms, OOPS</span></div>
+                <div class="skill-chip" data-tooltip="Modeling, feature engineering, audio classification pipelines">AI / ML: <span class="skill-names">Machine Learning, Audio Classification</span></div>
+                <div class="skill-chip" data-tooltip="Cloud deployments, relational DBs, version control & IDEs">Cloud & Tools: <span class="skill-names">AWS, MySQL, GitHub, VS Code</span></div>
+            </div>
+
+            <div class="skill-stats" aria-hidden="true">
+                <div class="stat">
+                    <div class="stat-name">Python</div>
+                    <div class="stat-bar"><div class="stat-fill" style="width:95%"></div></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-name">PyTorch</div>
+                    <div class="stat-bar"><div class="stat-fill" style="width:85%"></div></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-name">scikit-learn</div>
+                    <div class="stat-bar"><div class="stat-fill" style="width:88%"></div></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-name">AWS</div>
+                    <div class="stat-bar"><div class="stat-fill" style="width:75%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-badges" aria-hidden="true">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">scikit-learn</span>
+                <span class="skill-badge">AWS</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="content">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card" data-title="Automatic Vehicle Using LiDAR" data-desc="Autonomous vehicle for Indian road conditions using LiDAR and ML for obstacle detection and navigation." data-tags="LiDAR,Autonomy,ROS">
+                        <div class="project-thumb" aria-hidden="true"></div>
+                    <div class="project-overlay">
+                        <h3>Automatic Vehicle Using LiDAR</h3>
+                        <p>LiDAR-based obstacle detection and navigation.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-title="Human Scream Detection for Crime Control" data-desc="Real-time audio classification system to detect human screams for public safety and surveillance." data-tags="Audio,Classification,Real-time">
+                    <div class="project-thumb" aria-hidden="true"></div>
+                    <div class="project-overlay">
+                        <h3>Human Scream Detection</h3>
+                        <p>Real-time audio classification to detect screams.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-title="Advanced ETL Pipeline for Analytics-Ready Data" data-desc="Built a modular ETL pipeline to ingest raw CSV/JSON, clean data (missing values/outliers), and load analytics-ready tables with logging and validation checks to catch schema or data-quality issues." data-tags="ETL,DataEngineering,Pandas,SQL">
+                    <div class="project-thumb" aria-hidden="true"></div>
+                    <div class="project-overlay">
+                        <h3>Advanced ETL Pipeline for Analytics-Ready Data</h3>
+                        <p>Modular ETL to ingest CSV/JSON, clean & load analytics-ready tables with validations and logging.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-title="Depression Severity Classification (mdeSI)" data-desc="Trained logistic regression and other ML models to classify severe depressive episodes; used feature selection, class balancing and hyperparameter tuning to achieve >75% accuracy." data-tags="R,MachineLearning,Evaluation,Classification">
+                    <div class="project-thumb" aria-hidden="true"></div>
+                    <div class="project-overlay">
+                        <h3>Depression Severity Classification (mdeSI)</h3>
+                        <p>Modeling to classify adolescents with severe depressive episodes; achieved target accuracy via feature engineering and tuning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project preview modal -->
+    <div id="projectModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="true"></div>
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Close">✕</button>
+            <div class="modal-image" aria-hidden="true"></div>
+            <div class="modal-body">
+                <h3 class="modal-title"></h3>
+                <p class="modal-desc"></p>
+                <div class="modal-tags"></div>
+                <div class="modal-actions">
+                    <a href="#" class="btn primary" target="_blank" rel="noopener">View Project</a>
+                    <a href="#" class="btn secondary" target="_blank" rel="noopener">Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="content contact-card">
+            <div class="contact-inner">
+                <div class="contact-form-wrap">
+                    <h2>Contact</h2>
+                    <p class="lead">Interested in hiring or collaborating? Send a short message — I'll reply promptly.</p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your full name" required />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Brief project idea, role, or short intro..." required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn primary">Send Message</button>
+                            <a href="Vaishnavi_Dharmapuri_Resume.pdf" class="btn secondary" download="Vaishnavi_Dharmapuri_Resume.pdf">Download Resume</a>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="contact-info-wrap">
+                    <div class="info-panel">
+                        <h3>Get in touch</h3>
+                        <p class="contact-info">
+                            <strong>Email:</strong> <a href="mailto:vaishnavidharmapuri.2004@gmail.com">vaishnavidharmapuri.2004@gmail.com</a><br>
+                            <strong>Phone:</strong> <a href="tel:+918978516954">+91 89785 16954</a>
+                        </p>
+
+                        <h4>Availability</h4>
+                        <p class="contact-info">Open to internships, full-time roles and short consulting projects. Available immediately for interview.</p>
+
+                        <h4>Quick Links</h4>
+                        <p class="contact-links">
+                            <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+                            <a href="#" target="_blank" rel="noopener">GitHub</a> ·
+                            <a href="#projects">Projects</a>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
