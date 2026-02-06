@@ -220,16 +220,24 @@ h2 {
         position: absolute;
         right: 0;
         top: 64px;
-        background: rgba(255,255,255,0.95);
+        background: rgba(0,0,0,0.95);
         width: 100%;
         text-align: center;
         flex-direction: column;
         padding: 0.8rem 0;
-        border-top: 1px solid rgba(15,23,42,0.04);
+        border-top: 1px solid rgba(255,255,255,0.1);
     }
 
     .nav-links.show {
         display: flex;
+    }
+
+    .nav-links a {
+        color: #ffffff;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255,255,255,0.1);
     }
 
     .projects-grid {
@@ -559,3 +567,4 @@ h2 {
     .skill-grid { grid-template-columns: 1fr; }
     #skills .content { min-height: auto; padding: 1.6rem; }
 }
+
